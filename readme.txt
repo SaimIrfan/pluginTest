@@ -464,4 +464,3 @@ Uploading via FTP
 = 1.5.1 =
 * Dev   - Serious speed improvements for stores with a lot of variations
 * Fix   - Fixed bug 'uncaught TypeError: floor()' in PostMetaNumEntity.php
-

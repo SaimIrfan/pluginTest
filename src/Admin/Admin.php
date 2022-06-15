@@ -1,6 +1,5 @@
 <?php
 
-
 namespace FilterEverything\Filter;
 
 if ( ! defined('WPINC') ) {

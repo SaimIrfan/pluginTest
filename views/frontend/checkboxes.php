@@ -18,7 +18,7 @@ if ( ! defined('WPINC') ) {
 
 ?>
 <div class="<?php echo flrt_filter_class( $filter ); // Already escaped ?>" data-fid="<?php echo esc_attr( $filter['ID'] ); ?>">
-    <?php flrt_filter_header( $filter, $terms ); // Safe, escaped ?>
+    <?php  flrt_filter_header( $filter, $terms ); // Safe, escaped ?>
     <div class="<?php echo esc_attr( flrt_filter_content_class( $filter ) ); ?>">
         <?php if( $filter['search'] === 'yes' ):  ?>
         <div class="wpc-filter-search-wrapper wpc-filter-search-wrapper-<?php echo esc_attr( $filter['ID'] ); ?>">
@@ -26,7 +26,7 @@ if ( ! defined('WPINC') ) {
             <button class="wpc-search-clear" type="button" title="<?php esc_html_e('Clear search', 'filter-everything' ) ?>"><span class="wpc-search-clear-icon">&#215;</span></button>
         </div>
         <?php endif; ?>
-        <ul class="wpc-filters-ul-list wpc-filters-checkboxes wpc-filters-list-<?php echo esc_attr( $filter['ID'] ); ?>"><?php
+        <ul class="wpc-filters-ul-list-test wpc-filters-checkboxes wpc-filters-list-<?php echo esc_attr( $filter['ID'] ); ?>"><?php
 
             if( ! empty( $terms ) ):
                 $args = array(
@@ -36,7 +36,33 @@ if ( ! defined('WPINC') ) {
                     'set'               => $set
                 );
 
-                echo flrt_walk_terms_tree( $terms, $args );
+                // function StoreVendor($checkox_filter,$user_details,$args){
+
+                //     define('ONLY_ON_CLICK','1');
+                //     define('STORE_NAME', 'author');
+
+                //     if($checkox_filter['entity'] == STORE_NAME){
+                //         $filter_term =array();
+    
+                //         foreach($user_details as  $user_data){
+                //             if($user_data->term_id == ONLY_ON_CLICK){
+                //                 $filter_term[$user_data->term_id] = $user_data;
+                //                 break;
+                //             }
+                //         }
+                //         echo flrt_walk_terms_tree( $filter_term, $args );
+                //     }
+                //     else {
+                        echo flrt_walk_terms_tree( $terms, $args );
+                //     }
+    
+
+                // }
+
+                // StoreVendor($terms,$args,$filer);
+
+              
+                
 
             else:
 

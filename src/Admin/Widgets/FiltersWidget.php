@@ -115,6 +115,7 @@ class FiltersWidget extends \WP_Widget
 
         // Display or not Filter Set in dependency from the Apply button configuration
         if( isset( $theSet['show_on_the_page'] ) && ! $theSet['show_on_the_page'] ){
+            echo "Hello";
             $theSet = flrt_the_set( $set_id );
         }
 

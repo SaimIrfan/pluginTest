@@ -52,6 +52,7 @@ if ( ! defined('WPINC') ) {
                         </div>
                         <div class="wpc-filters-range-column wpc-filters-range-max-column">
                             <input type="number" class="wpc-filters-range-max" name="<?php echo esc_attr( $maxName ); ?>" value="<?php echo esc_attr( $max ); ?>" step="<?php echo esc_attr( $filter['step'] ); ?>" data-max="<?php echo esc_attr( $absMax ); ?>" />
+                            
                         </div>
                     </div>
                     <?php
@@ -63,6 +64,8 @@ if ( ! defined('WPINC') ) {
                         <div class="wpc-filters-range-slider-wrapper">
                             <div class="wpc-filters-range-slider-control wpc-slider-control-<?php echo esc_attr( $filter['ID'] ); ?>" data-fid="<?php echo esc_attr( $filter['ID'] ); ?>"></div>
                         </div>
+                        <h5><?php echo "<h5>" . "<span>Price</span>" . " " . "€" .$min . " - " . $max ."</h5>";  ?>
+                        </h5>
                     <?php else: ?>
                         <div class="wpc-filters-range-values-wrapper">
                             <p><?php echo esc_html( sprintf( __( '%s: %d &mdash; %d' ), $filter['label'], $absMin, $absMax ) ); ?></p>

